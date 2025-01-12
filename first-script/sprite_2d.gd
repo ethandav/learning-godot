@@ -1,4 +1,7 @@
 extends Sprite2D
 
-func _init():
-	print("Hello World")
+var speed = 400
+var angular_speed = PI
+
+func _process(delta):
+	rotation += angular_speed * delta
